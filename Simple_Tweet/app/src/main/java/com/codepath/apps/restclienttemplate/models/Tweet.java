@@ -1,5 +1,10 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import android.icu.text.RelativeDateTimeFormatter;
+import android.util.Log;
+
+import com.codepath.apps.restclienttemplate.TimeFormatter;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tweet {
+    public static final String TAG = "Tweet";
+
     public String body;
     public String createdAt;
     public User user;
@@ -17,6 +24,9 @@ public class Tweet {
         tweet.body = jsonObject.getString("text");
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.user= User.fromJson(jsonObject.getJSONObject("user"));
+        String formattedTime = TimeFormatter.getTimeDifference(tweet.createdAt);
+        tweet.createdAt = formattedTime;
+//        Log.i(TAG, tweet.body);
         return tweet;
     }
 
@@ -27,5 +37,6 @@ public class Tweet {
         }
         return tweets;
     }
+
 
 }
