@@ -34,6 +34,7 @@ GIF created with [ezgif](http://www.ezgif.com).
 ## Notes
 
 Describe any challenges encountered while building the app.
+Still having issues with resizing the bitmap of this implementation.
 
 ## Open-source libraries used
 
