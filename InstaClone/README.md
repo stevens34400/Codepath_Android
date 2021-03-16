@@ -1,6 +1,6 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *InstaClone*
 
-**Name of your app** is a photo sharing app similar to Instagram but using Parse as its backend.
+**InstaClone** is a photo sharing app similar to Instagram but using Parse as its backend.
 
 Time spent: **4** hours spent in total
 
