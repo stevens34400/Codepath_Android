@@ -99,12 +99,12 @@ public class MainActivity extends AppCompatActivity {
                 Bitmap takenImage = BitmapFactory.decodeFile(photoFile.getAbsolutePath());
                 // RESIZE BITMAP, see section below
                 // See code above
-                Uri takenPhotoUri = Uri.fromFile(getPhotoFileUri(photoFileName));
-                // by this point we have the camera photo on disk
-                Bitmap rawTakenImage = BitmapFactory.decodeFile(takenPhotoUri.getPath());
-                // See BitmapScaler.java: https://gist.github.com/nesquena/3885707fd3773c09f1bb
-                Bitmap resizedBitmap = BitmapScaler.scaleToFitWidth(rawTakenImage, SOME_WIDTH);
-                // Load the taken image into a preview
+//                Uri takenPhotoUri = Uri.fromFile(getPhotoFileUri(photoFileName));
+//                // by this point we have the camera photo on disk
+//                Bitmap rawTakenImage = BitmapFactory.decodeFile(takenPhotoUri.getPath());
+//                // See BitmapScaler.java: https://gist.github.com/nesquena/3885707fd3773c09f1bb
+//                Bitmap resizedBitmap = BitmapScaler.scaleToFitWidth(rawTakenImage, SOME_WIDTH);
+//                // Load the taken image into a preview
                 ivPostImage.setImageBitmap(takenImage);
             } else { // Result was a failure
                 Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
