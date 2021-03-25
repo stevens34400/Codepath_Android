@@ -41,7 +41,7 @@ GIF created with [ezgif](http://www.ezgif.com).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Fixed the issue with reformatting the taken picture. Having issues in rendering my queried data from back4app.
 
 ## Open-source libraries used
 
